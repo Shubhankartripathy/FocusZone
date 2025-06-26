@@ -1,0 +1,70 @@
+body {
+  font-family: sans-serif;
+  background: #f4f4f4;
+  text-align: center;
+  padding: 20px;
+}
+
+.planner, .pomodoro {
+  margin-top: 30px;
+  padding: 15px;
+  background: #fff;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+input {
+  padding: 8px;
+  width: 200px;
+}
+
+button {
+  padding: 8px 12px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+#quoteBox {
+  margin-top: 20px;
+  font-style: italic;
+  color: #444;
+}
+.reward-popup {
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #ffefc2;
+  color: #000;
+  padding: 20px 30px;
+  font-size: 1.2em;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+  z-index: 1000;
+}
+body.dark {
+  background-color: #1a1a1a;
+  color: #f1f1f1;
+}
+
+body.dark .planner,
+body.dark .pomodoro {
+  background: #333;
+  color: #f1f1f1;
+}
+
+#themeToggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 8px 12px;
+  background: #ddd;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
