@@ -1,29 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>FocusZone - Daily Planner</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="https://em-content.zobj.net/thumbs/240/apple/354/brain_1f9e0.png" />
 </head>
 <body>
-  <h1>🧠 FocusZone - Plan Your Day</h1>
-  <button id="themeToggle">🌞 Switch Theme</button>
+  <header>
+    <h1>🧠 FocusZone - Plan Your Day</h1>
+    <button id="themeToggle">🌞 Switch Theme</button>
+  </header>
 
+  <main class="container">
+    <section class="planner card">
+      <h2>📝 Task Planner</h2>
+      <input type="text" id="taskInput" placeholder="Enter your task" />
+      <button onclick="addTask()">Add Task</button>
+      <ul id="taskList"></ul>
+    </section>
 
-  <div class="planner">
-    <input type="text" id="taskInput" placeholder="Enter your task">
-    <button onclick="addTask()">Add Task</button>
-    <ul id="taskList"></ul>
-  </div>
-
-  <div class="pomodoro">
-    <h2>⏱️ Pomodoro Timer</h2>
-    <div id="timer">25:00</div>
-    <button onclick="startTimer()">Start</button>
-    <button onclick="resetTimer()">Reset</button>
-  </div>
+    <section class="pomodoro card">
+      <h2>⏱️ Pomodoro Timer</h2>
+      <div id="timer">25:00</div>
+      <div class="btn-group">
+        <button onclick="startTimer()">Start</button>
+        <button onclick="resetTimer()">Reset</button>
+      </div>
+    </section>
+  </main>
 
   <div id="quoteBox"></div>
+
+  <footer>
+    Made with 💻 by <strong>Shubhankar Tripathy</strong> | BTech CSE @ CUTM
+  </footer>
 
   <script src="js/app.js"></script>
 </body>
